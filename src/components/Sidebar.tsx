@@ -1,22 +1,24 @@
 'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Linkedin, Facebook, Instagram, Twitter } from "lucide-react";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 
 interface SidebarProps {
-  activeSection: string;
-  onNavigate: (id: string) => void;
+  // No props needed anymore since we're using URL routing
 }
 
-const Sidebar = ({ activeSection, onNavigate }: SidebarProps) => {
+const Sidebar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const pathname = usePathname();
 
   const menuItems = [
-    { id: 'about', label: 'About Me', icon: '👤' },
-    { id: 'portfolio', label: 'Portfolio', icon: '💼', badge: '6' },
-    { id: 'services', label: 'Services & Pricing', icon: '💼' },
-    { id: 'resume', label: 'Resume', icon: '📄' },
-    { id: 'blog', label: 'Blog', icon: '📝' }
+    { id: '/', label: 'About Me', icon: '👤', path: '/' },
+    { id: 'portfolio', label: 'Portfolio', icon: '💼', badge: '6', path: '/portfolio' },
+    { id: 'services', label: 'Services & Pricing', icon: '💰', path: '/services' },
+    { id: 'resume', label: 'Resume', icon: '📄', path: '/resume' },
+    { id: 'blog', label: 'Blog', icon: '📝', path: '/blog' }
   ];
 
   const socialLinks = [
@@ -42,9 +44,16 @@ const Sidebar = ({ activeSection, onNavigate }: SidebarProps) => {
     },
   ];
 
-  const handleNavigation = (id: string) => {
-    onNavigate(id);
+  const handleNavigation = () => {
     setIsSidebarOpen(false);
+  };
+
+  // Check if current path matches menu item
+  const isActive = (path: string) => {
+    if (path === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(path);
   };
 
   return (
@@ -115,11 +124,12 @@ const Sidebar = ({ activeSection, onNavigate }: SidebarProps) => {
           {/* Navigation Menu */}
           <nav className="flex-1 space-y-2">
             {menuItems.map((item) => (
-              <button
+              <Link
                 key={item.id}
-                onClick={() => handleNavigation(item.id)}
+                href={item.path}
+                onClick={handleNavigation}
                 className={`w-full flex items-center justify-between px-4 py-3 rounded-lg transition-all duration-300 ${
-                  activeSection === item.id
+                  isActive(item.path)
                     ? 'bg-primary text-white shadow-lg'
                     : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
                 }`}
@@ -130,14 +140,14 @@ const Sidebar = ({ activeSection, onNavigate }: SidebarProps) => {
                 </div>
                 {item.badge && (
                   <span className={`px-2 py-1 text-xs rounded ${
-                    activeSection === item.id 
+                    isActive(item.path)
                       ? 'bg-white/20' 
                       : 'bg-primary/10 text-primary'
                   }`}>
                     {item.badge}
                   </span>
                 )}
-              </button>
+              </Link>
             ))}
           </nav>
         </div>

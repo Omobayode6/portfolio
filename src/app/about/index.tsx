@@ -4,8 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Sidebar from '@/components/Sidebar';
 import Footer from '@/components/Footer';
 
-export default function About() {
-  const [activeSection, setActiveSection] = useState('about');
+export default function Home() {
   const { scrollY } = useScroll();
   const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);
 
@@ -63,24 +62,6 @@ export default function About() {
     }
   ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ['about', 'skills', 'portfolio', 'contact'];
-      const current = sections.find(section => {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          return rect.top <= 150 && rect.bottom >= 150;
-        }
-        return false;
-      });
-      if (current) setActiveSection(current);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -90,7 +71,7 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
-      <Sidebar activeSection={activeSection} onNavigate={scrollToSection} />
+      <Sidebar />
 
       {/* Main Content */}
       <main className="lg:ml-80">
@@ -157,8 +138,8 @@ export default function About() {
               className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
             >
               {[
-                { value: '5+', label: 'Years Experience' },
-                { value: '10+', label: 'Projects Completed' },
+                { value: '4+', label: 'Years Experience' },
+                { value: '50+', label: 'Projects Completed' },
                 { value: '5', label: 'Industries' },
                 { value: '100%', label: 'Remote Ready' }
               ].map((stat, index) => (
@@ -296,7 +277,7 @@ export default function About() {
               
               <div className="flex flex-wrap gap-6 justify-center mb-12">
                 <a
-                  href="mailto:omobayodeosinubi@gmail.com"
+                  href="mailto:omobayode93@gmail.com"
                   className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-primary transition-colors"
                 >
                   <span className="text-2xl">📧</span>
@@ -312,22 +293,13 @@ export default function About() {
                   <span>LinkedIn</span>
                 </a>
                 <a
-                  href="https://github.com/Omobayode6"
+                  href="https://github.com/omobayode"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-primary transition-colors"
                 >
                   <span className="text-2xl">💻</span>
                   <span>GitHub</span>
-                </a>
-                <a
-                  href="https://twitter.com/Omobayode6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-primary transition-colors"
-                >
-                  <span className="text-2xl">💻</span>
-                  <span>X</span>
                 </a>
               </div>
 
