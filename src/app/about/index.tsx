@@ -165,7 +165,7 @@ export default function Home() {
               <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 md:p-12 shadow-lg">
                 <div className="prose prose-lg dark:prose-invert max-w-none">
                   <p className="text-lg leading-relaxed mb-6">
-                    I&apos;m a <strong>Senior Frontend Engineer</strong> based in Lagos, Nigeria, with <strong>4+ years of experience</strong> building scalable, high-performance web applications.
+                    I&apos;m a <strong>Senior Frontend Engineer</strong> based in Lagos, Nigeria, with <strong>5+ years of experience</strong> building scalable, high-performance web applications.
                   </p>
                   <p className="text-lg leading-relaxed mb-6">
                     My work spans <strong>fintech, escrow systems, cross-border e-commerce, identity verification, real-estate tokenization, and ed-tech</strong>.
