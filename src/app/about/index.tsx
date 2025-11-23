@@ -138,8 +138,8 @@ export default function Home() {
               className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
             >
               {[
-                { value: '4+', label: 'Years Experience' },
-                { value: '50+', label: 'Projects Completed' },
+                { value: '5+', label: 'Years Experience' },
+                { value: '10+', label: 'Projects Completed' },
                 { value: '5', label: 'Industries' },
                 { value: '100%', label: 'Remote Ready' }
               ].map((stat, index) => (
