@@ -19,7 +19,7 @@ const ServicesPage = () => {
         'Responsive design',
         'Performance optimization'
       ],
-      hourlyRate: '$80-120',
+      hourlyRate: '$10-20',
       projectRate: '$5,000-15,000',
       icon: '💻',
       gradient: 'from-blue-500 to-cyan-500'
@@ -35,7 +35,7 @@ const ServicesPage = () => {
         'Technical documentation',
         'Team training sessions'
       ],
-      hourlyRate: '$100-150',
+      hourlyRate: '$15-30',
       projectRate: '$3,000-8,000',
       icon: '🏗️',
       gradient: 'from-purple-500 to-pink-500'
@@ -51,7 +51,7 @@ const ServicesPage = () => {
         'Animation & micro-interactions',
         'Cross-browser compatibility'
       ],
-      hourlyRate: '$70-100',
+      hourlyRate: '$8-15',
       projectRate: '$4,000-10,000',
       icon: '🎨',
       gradient: 'from-green-500 to-emerald-500'
@@ -67,7 +67,7 @@ const ServicesPage = () => {
         'Bundle size reduction',
         'SEO optimization'
       ],
-      hourlyRate: '$90-130',
+      hourlyRate: '$15-30',
       projectRate: '$2,500-7,000',
       icon: '⚡',
       gradient: 'from-yellow-500 to-orange-500'
@@ -83,7 +83,7 @@ const ServicesPage = () => {
         'User authentication',
         'Admin dashboard'
       ],
-      hourlyRate: '$85-125',
+      hourlyRate: '$15-25',
       projectRate: '$8,000-20,000',
       icon: '🛒',
       gradient: 'from-indigo-500 to-purple-500'
@@ -99,7 +99,7 @@ const ServicesPage = () => {
         'Cache strategies',
         'Install prompt optimization'
       ],
-      hourlyRate: '$75-110',
+      hourlyRate: '$15-35',
       projectRate: '$3,500-9,000',
       icon: '📱',
       gradient: 'from-pink-500 to-rose-500'
@@ -115,7 +115,7 @@ const ServicesPage = () => {
         'Automated testing pipeline',
         'Monitoring & logging setup'
       ],
-      hourlyRate: '$90-140',
+      hourlyRate: '$15-30',
       projectRate: '$2,000-6,000',
       icon: '🚀',
       gradient: 'from-red-500 to-orange-500'
@@ -131,7 +131,7 @@ const ServicesPage = () => {
         'Error handling',
         'API documentation'
       ],
-      hourlyRate: '$80-120',
+      hourlyRate: '$10-20',
       projectRate: '$3,000-8,000',
       icon: '🔌',
       gradient: 'from-teal-500 to-cyan-500'
@@ -147,7 +147,7 @@ const ServicesPage = () => {
         'Theme customization',
         'NPM package publishing'
       ],
-      hourlyRate: '$85-130',
+      hourlyRate: '$15-30',
       projectRate: '$5,000-12,000',
       icon: '📦',
       gradient: 'from-violet-500 to-purple-500'
@@ -163,7 +163,7 @@ const ServicesPage = () => {
         'Career development advice',
         'Tech stack recommendations'
       ],
-      hourlyRate: '$100-150',
+      hourlyRate: '$20-40',
       projectRate: '$1,500-5,000',
       icon: '👨‍🏫',
       gradient: 'from-amber-500 to-yellow-500'
@@ -179,7 +179,7 @@ const ServicesPage = () => {
         'Testing migration',
         'Documentation updates'
       ],
-      hourlyRate: '$90-140',
+      hourlyRate: '$20-40',
       projectRate: '$6,000-18,000',
       icon: '🔄',
       gradient: 'from-sky-500 to-blue-500'
@@ -195,7 +195,7 @@ const ServicesPage = () => {
         'Export & reporting features',
         'Analytics integration'
       ],
-      hourlyRate: '$85-125',
+      hourlyRate: '$15-35',
       projectRate: '$7,000-16,000',
       icon: '📊',
       gradient: 'from-emerald-500 to-teal-500'
@@ -207,7 +207,7 @@ const ServicesPage = () => {
       name: 'Starter',
       description: 'Perfect for small projects and MVPs',
       price: '$2,500',
-      duration: '2-3 weeks',
+      duration: '4-12 weeks',
       features: [
         'Up to 5 pages/components',
         'Responsive design',
@@ -222,7 +222,7 @@ const ServicesPage = () => {
       name: 'Professional',
       description: 'Ideal for growing businesses',
       price: '$7,500',
-      duration: '4-6 weeks',
+      duration: '12-24 weeks',
       features: [
         'Up to 15 pages/components',
         'Advanced UI/UX implementation',
@@ -239,7 +239,7 @@ const ServicesPage = () => {
       name: 'Enterprise',
       description: 'For complex, large-scale applications',
       price: '$15,000+',
-      duration: '8-12 weeks',
+      duration: '24-53 weeks',
       features: [
         'Unlimited pages/components',
         'Custom architecture',
