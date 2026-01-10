@@ -20,7 +20,7 @@ const ServicesPage = () => {
         'Performance optimization'
       ],
       hourlyRate: '$10-20',
-      projectRate: '$5,000-15,000',
+      projectRate: '$3,000-6,000',
       icon: '💻',
       gradient: 'from-blue-500 to-cyan-500'
     },
@@ -36,7 +36,7 @@ const ServicesPage = () => {
         'Team training sessions'
       ],
       hourlyRate: '$15-30',
-      projectRate: '$3,000-8,000',
+      projectRate: '$1,000-3,000',
       icon: '🏗️',
       gradient: 'from-purple-500 to-pink-500'
     },
@@ -52,7 +52,7 @@ const ServicesPage = () => {
         'Cross-browser compatibility'
       ],
       hourlyRate: '$8-15',
-      projectRate: '$4,000-10,000',
+      projectRate: '$800-1,000',
       icon: '🎨',
       gradient: 'from-green-500 to-emerald-500'
     },
@@ -68,7 +68,7 @@ const ServicesPage = () => {
         'SEO optimization'
       ],
       hourlyRate: '$15-30',
-      projectRate: '$2,500-7,000',
+      projectRate: '$900-1,500',
       icon: '⚡',
       gradient: 'from-yellow-500 to-orange-500'
     },
@@ -84,7 +84,7 @@ const ServicesPage = () => {
         'Admin dashboard'
       ],
       hourlyRate: '$15-25',
-      projectRate: '$8,000-20,000',
+      projectRate: '$5,000-10,000',
       icon: '🛒',
       gradient: 'from-indigo-500 to-purple-500'
     },
@@ -100,7 +100,7 @@ const ServicesPage = () => {
         'Install prompt optimization'
       ],
       hourlyRate: '$15-35',
-      projectRate: '$3,500-9,000',
+      projectRate: '$3,500-5,000',
       icon: '📱',
       gradient: 'from-pink-500 to-rose-500'
     },
@@ -116,7 +116,7 @@ const ServicesPage = () => {
         'Monitoring & logging setup'
       ],
       hourlyRate: '$15-30',
-      projectRate: '$2,000-6,000',
+      projectRate: '$900-1,500',
       icon: '🚀',
       gradient: 'from-red-500 to-orange-500'
     },
@@ -132,7 +132,7 @@ const ServicesPage = () => {
         'API documentation'
       ],
       hourlyRate: '$10-20',
-      projectRate: '$3,000-8,000',
+      projectRate: '$1,000-6,000',
       icon: '🔌',
       gradient: 'from-teal-500 to-cyan-500'
     },
@@ -148,7 +148,7 @@ const ServicesPage = () => {
         'NPM package publishing'
       ],
       hourlyRate: '$15-30',
-      projectRate: '$5,000-12,000',
+      projectRate: '$900-2,000',
       icon: '📦',
       gradient: 'from-violet-500 to-purple-500'
     },
@@ -164,7 +164,7 @@ const ServicesPage = () => {
         'Tech stack recommendations'
       ],
       hourlyRate: '$20-40',
-      projectRate: '$1,500-5,000',
+      projectRate: '$500-1,000',
       icon: '👨‍🏫',
       gradient: 'from-amber-500 to-yellow-500'
     },
@@ -180,7 +180,7 @@ const ServicesPage = () => {
         'Documentation updates'
       ],
       hourlyRate: '$20-40',
-      projectRate: '$6,000-18,000',
+      projectRate: '$1,000-2,500',
       icon: '🔄',
       gradient: 'from-sky-500 to-blue-500'
     },
@@ -196,7 +196,7 @@ const ServicesPage = () => {
         'Analytics integration'
       ],
       hourlyRate: '$15-35',
-      projectRate: '$7,000-16,000',
+      projectRate: '$3,000-6,000',
       icon: '📊',
       gradient: 'from-emerald-500 to-teal-500'
     }
